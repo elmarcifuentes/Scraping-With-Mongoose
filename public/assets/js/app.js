@@ -8,7 +8,7 @@ $.getJSON("/articles", function(data) {
         var bodyDiv = $("<div>").addClass("card-body");
         var articleTitle = $("<h5>").html(data[i].title).addClass("card-title");
         var articleLink = $("<a>").html("Read Article").attr("href", "http://www.latimes.com" + data[i].link).addClass("btn btn-primary");
-        var noteLink = $("<button>").html("Add Note").attr("data-id", data[i]._id).addClass("btn btn-primary");
+        var noteLink = $("<button>").html("Add Note").attr("data-id", data[i]._id).addClass("btn btn-danger");
         bodyDiv.append(articleTitle, articleLink, noteLink);
         cardDiv.append(image, bodyDiv);
         $("#articles").append(cardDiv);
@@ -34,7 +34,7 @@ $(document).on("click", "button", function() {
             $("#notes").append("<h5>" + data.title + "</h5>");
             $("#notes").append("<input id='titleinput' name='title' >");
             $("#notes").append("<textarea id='bodyinput' name='body'></textarea>");
-            $("#notes").append("<button data-id='" + data._id + "' id='savenote'>Save Note</button>");
+            $("#notes").append("<button data-id='" + data._id + "' class='btn btn-secondary' id='savenote'>Save Note</button>")
 
             if (data.note) {
                 $("#titleinput").val(data.note.title);

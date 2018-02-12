@@ -14,9 +14,8 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-dark bg-dark">
         <a class="navbar-brand" href="#">
-            <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
             Mongo Scraper
           </a>
     </nav>
@@ -25,13 +24,19 @@
         <h1 class="display-4">Mongo Scraper</h1>
         <p class="lead">Los Angeles Times Edition</p>
         <hr class="my-4">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Articles</a>
         </p>
     </div>
     <!-- Mongo Scraped Articles -->
-    <div class="container">
-        <div id="articles"></div>
-        <div id="notes"></div>
+    <div>
+        <div class="row">
+            <div class="col-8">
+                <div id="articles"></div>
+            </div>
+            <div class="col-4">
+                <div id="notes"></div>
+            </div>
+        </div>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
