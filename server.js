@@ -6,14 +6,14 @@ var mongoose = require("mongoose");
 var axios = require("axios");
 var cheerio = require("cheerio");
 
-// Require all models
-var db = require("./models");
 
 var PORT = process.env.PORT || 3000;
 
 // Initialize Express
 var app = express();
 
+// Require all models
+var db = require("./models");
 // Use morgan logger for logging requests
 app.use(logger("dev"));
 // Use body-parser for handling form submissions
