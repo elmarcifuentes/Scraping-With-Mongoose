@@ -1,0 +1,33 @@
+#articles {
+    display: inline-block;
+    overflow: auto;
+    width: 60%;
+  }
+  #notes {
+    float: right;
+    width: 30%;
+  }
+  textarea, input {
+    display: block;
+    width: 100%;
+    background-color: rgb(227, 228, 228);
+  }
+  input {
+    height: 36px;
+    font-size: 24px;
+  }
+  textarea {
+    height: 200px;
+    font-size: 18px;
+  }
+
+  .card {
+    width: 300px;
+  }
+
+  /* #articles {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+} */
